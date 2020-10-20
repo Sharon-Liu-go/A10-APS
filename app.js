@@ -7,7 +7,7 @@ const bodyParser = require('body-parser')
 
 require('./config/mongoose')
 
-app.use(bodyParser.urlencoded({ extend: true }))
+app.use(bodyParser.urlencoded({ extended: true }))
 
 app.use(express.static('public'))
 app.use(routes)
